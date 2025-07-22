@@ -5,26 +5,12 @@
 	import AppProgressIndicator from '$lib/components/AppProgressIndicator.svelte';
 	import AppProjectsSelector from '$lib/components/AppProjectsSelector.svelte';
 
-	import { generatePrompt } from '$lib/prompts.svelte';
-	import { userStore } from '$lib/stores/userStore.svelte';
 
-	let generatedPrompt = '';
-	let copied = false;
 
-	const currentPrompt = $derived(
-		generatePrompt(
-			userStore.selectedTopics.map((topic) => topic.id),
-			userStore.input
-		)
-	);
 
-	async function copyToClipboard() {
-		if (currentPrompt) {
-			await navigator.clipboard.writeText(currentPrompt);
-			copied = true;
-			setTimeout(() => (copied = false), 2000);
-		}
-	}
+
+
+
 </script>
 
 <svelte:head>
@@ -46,8 +32,8 @@
 					<AppProjectsSelector />
 				</div>
 				<div>
-					<AppInput disabled={userStore.selectedTopics.length === 0} />
-					<AppOutput prompt={currentPrompt} {copied} onCopy={copyToClipboard} />
+					<AppInput />
+					<AppOutput />
 				</div>
 			</div>
 		</div>

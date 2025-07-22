@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { userStore } from '$lib/stores/userStore.svelte';
+
 	import AppSectionHeader from './AppSectionHeader.svelte';
 
-	let { prompt } = $props();
-
 	let textareaElement: HTMLTextAreaElement;
+
+  const prompt = $derived(userStore.output);
 </script>
 
 <section class="mt-8">
@@ -22,7 +23,7 @@
 
 	<div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
 		<button
-			class="brutalism brutalism-shadow-medium bg-accent-tertiary h-14 w-full font-bold !text-white"
+			class="brutalism brutalism-shadow-medium brutalism-transition bg-accent-tertiary h-14 w-full font-bold !text-white"
 			onclick={() => {
 				userStore.promptCopied = true;
 				navigator.clipboard.writeText(prompt);
@@ -35,7 +36,7 @@
 		</button>
 
 		<button
-			class="brutalism brutalism-shadow-medium bg-accent h-14 w-full font-bold"
+			class="brutalism brutalism-shadow-medium brutalism-transition bg-accent h-14 w-full font-bold"
 			onclick={() => {
 				textareaElement.select();
 			}}

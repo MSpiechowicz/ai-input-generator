@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { initializeTopics } from '$lib/prompts.svelte';
+	import { generatePrompt, initializeTopics } from '$lib/prompts.svelte';
 	import { userStore } from '$lib/stores/userStore.svelte';
+
 	import AppNoProjectResult from './AppNoProjectResult.svelte';
 	import AppProjects from './AppProjects.svelte';
 	import AppSearchInput from './AppSearchInput.svelte';
@@ -28,10 +29,18 @@
 			// Remove from selection
 			const newSelection = userStore.selectedTopics.filter((p) => p !== project);
 			userStore.selectedTopics = newSelection;
+			userStore.output = generatePrompt(
+				userStore.selectedTopics.map((topic) => topic.id),
+				userStore.input
+			);
 		} else {
 			// Add to selection
 			const newSelection = [...userStore.selectedTopics, project];
 			userStore.selectedTopics = newSelection;
+			userStore.output = generatePrompt(
+				userStore.selectedTopics.map((topic) => topic.id),
+				userStore.input
+			);
 		}
 	}
 
