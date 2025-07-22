@@ -1,0 +1,12 @@
+{
+  "id": "svelte",
+  "name": "Svelte",
+  "description": "SvelteKit, Svelte 5, Reactive UI",
+  "keywords": ["SvelteKit", "Svelte 5", "Reactive", "Components", "Stores"],
+  "promptFiles": [
+    "svelte5-best-practices.md",
+    "svelte5-performance.md",
+    "svelte5-small-docs.md",
+    "svelte5-runes.md"
+  ]
+}

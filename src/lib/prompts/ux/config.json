@@ -1,0 +1,12 @@
+{
+  "id": "ux",
+  "name": "UX Design",
+  "description": "User Experience, Wireframes, Prototypes",
+  "keywords": ["User Experience", "Wireframes", "Prototypes", "Research", "Testing"],
+  "emoji": "🎨",
+  "promptFiles": [
+    "ux-research-methods.md",
+    "ux-design-principles.md",
+    "ux-accessibility.md"
+  ]
+}

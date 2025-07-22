@@ -1,0 +1,12 @@
+{
+  "id": "react",
+  "name": "React",
+  "description": "React, Next.js, Hooks, JSX",
+  "keywords": ["React", "Next.js", "Hooks", "JSX", "Components"],
+  "emoji": "⚛️",
+  "promptFiles": [
+    "react-core-rules.md",
+    "react-hooks-patterns.md",
+    "react-performance.md"
+  ]
+}

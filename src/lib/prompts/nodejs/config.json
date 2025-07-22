@@ -1,0 +1,12 @@
+{
+  "id": "nodejs",
+  "name": "Node.js",
+  "description": "Backend, Express, API Development",
+  "keywords": ["Backend", "Express", "API", "Server", "JavaScript"],
+  "emoji": "📦",
+  "promptFiles": [
+    "nodejs-core-rules.md",
+    "nodejs-api-patterns.md",
+    "nodejs-security.md"
+  ]
+}

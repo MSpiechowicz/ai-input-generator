@@ -1,0 +1,47 @@
+.card-brutalist {
+	background-color: var(--brutalist-white);
+	border: var(--border-thick);
+	box-shadow: var(--shadow-brutalist);
+	padding: 24px;
+	position: relative;
+}
+
+.card-brutalist:hover {
+	transform: var(--transform-brutalist-small);
+	box-shadow: var(--shadow-brutalist-large);
+}
+
+.card-interactive {
+	cursor: pointer;
+	transition: all 0.1s ease;
+}
+
+.card-interactive:active {
+	transform: var(--transform-brutalist-medium);
+	box-shadow: var(--shadow-brutalist-small);
+}
+
+/* Card Variants */
+.card-yellow {
+	background-color: var(--brutalist-yellow);
+}
+
+.card-green {
+	background-color: var(--brutalist-green);
+}
+
+.card-blue {
+	background-color: var(--brutalist-blue);
+	color: var(--brutalist-white);
+}
+
+.card-purple {
+	background-color: var(--brutalist-purple);
+	color: var(--brutalist-white);
+}
+
+.card-selected {
+	background-color: var(--brutalist-yellow);
+	transform: var(--transform-brutalist-small);
+	box-shadow: var(--shadow-brutalist-large);
+}

@@ -1,0 +1,8 @@
+{
+  "id": "angular",
+  "name": "Angular",
+  "description": "Angular, TypeScript, Components",
+  "keywords": ["Angular", "TypeScript", "Components", "Services", "RxJS"],
+  "emoji": "🅰️",
+  "promptFiles": ["angular-core-rules.md"]
+}

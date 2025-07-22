@@ -1,0 +1,8 @@
+{
+  "id": "devops",
+  "name": "DevOps",
+  "description": "Docker, CI/CD, Cloud Infrastructure",
+  "keywords": ["Docker", "CI/CD", "Cloud", "Infrastructure", "Deployment"],
+  "emoji": "⚙️",
+  "promptFiles": ["devops-core-rules.md"]
+}

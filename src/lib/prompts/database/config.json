@@ -1,0 +1,7 @@
+{
+  "id": "database",
+  "name": "Database",
+  "description": "SQL, NoSQL, Schema Design",
+  "keywords": ["SQL", "NoSQL", "Schema", "Queries", "Optimization"],
+  "promptFiles": ["database-core-rules.md"]
+}

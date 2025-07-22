@@ -1,0 +1,8 @@
+{
+  "id": "vue",
+  "name": "Vue",
+  "description": "Vue.js, Nuxt, Composition API",
+  "keywords": ["Vue.js", "Nuxt", "Composition API", "Reactive", "Templates"],
+  "emoji": "🟢",
+  "promptFiles": ["vue-core-rules.md"]
+}

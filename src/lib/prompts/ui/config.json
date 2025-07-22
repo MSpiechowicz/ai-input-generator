@@ -1,0 +1,8 @@
+{
+  "id": "ui",
+  "name": "UI Design",
+  "description": "Interface Design, Components, Systems",
+  "keywords": ["Interface", "Components", "Design Systems", "Visual", "Layouts"],
+  "emoji": "✨",
+  "promptFiles": ["ui-core-rules.md"]
+}
