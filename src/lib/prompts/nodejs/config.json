@@ -2,7 +2,7 @@
   "id": "nodejs",
   "name": "Node.js",
   "description": "Backend, Express, API Development",
-  "keywords": ["Backend", "Express", "API", "Server", "JavaScript"],
+  "keywords": ["BACKEND", "EXPRESS", "API", "SERVER"],
   "emoji": "📦",
   "promptFiles": [
     "nodejs-core-rules.md",

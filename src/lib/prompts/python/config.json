@@ -1,8 +1,8 @@
 {
   "id": "python",
   "name": "Python",
-  "description": "Django, FastAPI, Flask",
-  "keywords": ["Django", "FastAPI", "Flask", "Backend", "APIs"],
+  "description": "Python, Flask, Backend, Api, REST",
+  "keywords": ["PYTHON", "FLASK", "BACKEND", "API", "REST"],
   "emoji": "🐍",
   "promptFiles": ["python-core-rules.md"]
 }

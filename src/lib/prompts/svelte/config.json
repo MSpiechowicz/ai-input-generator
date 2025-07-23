@@ -2,7 +2,7 @@
   "id": "svelte",
   "name": "Svelte",
   "description": "SvelteKit, Svelte 5, Reactive UI",
-  "keywords": ["SvelteKit", "Svelte 5", "Reactive", "Components", "Stores"],
+  "keywords": ["FRONTEND", "REACTIVE", "UI", "COMPONENTS", "STORES", "HTML"],
   "promptFiles": [
     "svelte5-best-practices.md",
     "svelte5-performance.md",

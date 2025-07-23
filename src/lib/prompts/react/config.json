@@ -1,8 +1,8 @@
 {
   "id": "react",
   "name": "React",
-  "description": "React, Next.js, Hooks, JSX",
-  "keywords": ["React", "Next.js", "Hooks", "JSX", "Components"],
+  "description": "React, Hooks, JSX, Components",
+  "keywords": ["FRONTEND", "HOOKS", "JSX", "COMPONENTS", "HTML"],
   "emoji": "⚛️",
   "promptFiles": [
     "react-core-rules.md",
