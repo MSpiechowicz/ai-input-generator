@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { generatePrompt } from '$lib/prompts.svelte';
 	import { userStore } from '$lib/stores/userStore.svelte';
-
 	import AppSectionHeader from './AppSectionHeader.svelte';
 
 	const disabled = $derived(userStore.selectedTopics.length === 0);

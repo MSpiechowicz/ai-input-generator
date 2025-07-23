@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { userStore } from '$lib/stores/userStore.svelte';
-
 	import AppSectionHeader from './AppSectionHeader.svelte';
 
 	let textareaElement: HTMLTextAreaElement;

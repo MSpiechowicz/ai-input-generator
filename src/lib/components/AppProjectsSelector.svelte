@@ -1,13 +1,11 @@
 <script lang="ts">
 	import { generatePrompt, initializeTopics } from '$lib/prompts.svelte';
 	import { userStore } from '$lib/stores/userStore.svelte';
-
 	import AppNoProjectResult from './AppNoProjectResult.svelte';
 	import AppProjects from './AppProjects.svelte';
 	import AppSearchInput from './AppSearchInput.svelte';
 	import AppSectionHeader from './AppSectionHeader.svelte';
 	import AppShowMoreProjects from './AppShowMoreProjects.svelte';
-
 	import type { TopicType } from '$lib/types/topicType';
 
 	$effect(() => {
