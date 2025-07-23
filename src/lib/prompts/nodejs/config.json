@@ -3,7 +3,6 @@
   "name": "Node.js",
   "description": "Backend, Express, API Development",
   "keywords": ["BACKEND", "EXPRESS", "API", "SERVER"],
-  "emoji": "📦",
   "promptFiles": [
     "nodejs-core-rules.md",
     "nodejs-api-patterns.md",

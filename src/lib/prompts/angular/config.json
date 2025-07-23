@@ -3,6 +3,5 @@
   "name": "Angular",
   "description": "Angular, Components, Services, RxJS",
   "keywords": ["ANGULAR", "COMPONENTS", "SERVICES", "RXJS"],
-  "emoji": "🅰️",
   "promptFiles": ["angular-core-rules.md"]
 }

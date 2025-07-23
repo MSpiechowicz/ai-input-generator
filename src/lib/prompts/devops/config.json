@@ -3,6 +3,5 @@
   "name": "DevOps",
   "description": "Docker, CI/CD, Cloud Infrastructure",
   "keywords": ["DOCKER", "CI/CD", "CLOUD", "INFRASTRUCTURE", "DEPLOYMENT"],
-  "emoji": "⚙️",
   "promptFiles": ["devops-core-rules.md"]
 }

@@ -3,6 +3,5 @@
   "name": "Python",
   "description": "Python, Flask, Backend, Api, REST",
   "keywords": ["PYTHON", "FLASK", "BACKEND", "API", "REST"],
-  "emoji": "🐍",
   "promptFiles": ["python-core-rules.md"]
 }
