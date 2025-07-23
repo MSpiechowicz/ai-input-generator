@@ -3,9 +3,7 @@
 
 @plugin '@tailwindcss/typography';
 
-/* Neo-Brutalist Design System */
 :root {
-	/* Core Colors - Used */
 	--brutalism-black: #000000;
 	--brutalism-white: #ffffff;
 	--brutalism-yellow: #ffff00;
@@ -13,24 +11,20 @@
 	--brutalism-blue: #3366cc;
 	--brutalism-red: #ff0000;
 
-	/* Background Colors - Used */
 	--bg-primary: #ffffff;
 	--bg-secondary: #fafafa;
 	--bg-accent-yellow: #ffff00;
 	--bg-accent-green: #00ff41;
 	--bg-accent-blue: #0066ff;
 
-	/* Borders - Used */
 	--border-thick: 4px solid #000000;
 
-	/* Shadows - Used */
 	--shadow-brutalism-small: 4px 4px 0px var(--brutalism-black);
 	--shadow-brutalism-medium: 6px 6px 0px var(--brutalism-black);
 	--shadow-brutalism-large: 10px 10px 0px var(--brutalism-black);
 }
 
 @theme {
-	/* Colors - Used */
 	--color-primary: var(--brutalism-black);
 	--color-secondary: var(--brutalism-white);
 	--color-accent: var(--brutalism-yellow);
@@ -38,18 +32,15 @@
 	--color-accent-tertiary: var(--brutalism-blue);
 	--color-button-red: var(--brutalism-red);
 
-	/* Backgrounds - Used */
 	--background-primary: var(--bg-secondary);
 	--background-secondary: var(--bg-primary);
 	--background-accent: var(--bg-accent-yellow);
 	--background-accent-secondary: var(--bg-accent-green);
 	--background-accent-tertiary: var(--bg-accent-blue);
 
-	/* Borders - Used */
 	--border-primary: var(--border-thick);
 }
 
-/* Reset and Base Styles */
 * {
 	box-sizing: border-box;
 }
