@@ -1,0 +1,9 @@
+{
+  "id": "tailwind",
+  "name": "Tailwind",
+  "description": "Tailwind CSS, Tailwind UI, Tailwind Components",
+  "keywords": ["CSS", "UI", "WEB", "COMPONENTS"],
+  "promptFiles": [
+    "tailwind-core-rules.md"
+  ]
+}
