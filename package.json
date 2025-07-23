@@ -5,8 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "NODE_ENV=production vite build",
-		"deploy": "gh-pages -d dist",
+		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -14,8 +13,7 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run",
-		"github:pages:deploy": "npm run build && npm run deploy"
+		"test": "npm run test:unit -- --run"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",

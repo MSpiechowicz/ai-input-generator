@@ -8,18 +8,13 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		// adapter-static for GitHub Pages deployment
 		adapter: adapter({
-			// default options are shown. On some platforms
-			// these options are set automatically — see below
-			pages: 'dist',
-			assets: 'dist',
-			fallback: '404.html',
-			precompress: false,
-			strict: false
+			pages: 'build',
+			assets: 'build',
+			fallback: '404.html'
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/ai-input-generator' : ''
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		}
 	}
 };
