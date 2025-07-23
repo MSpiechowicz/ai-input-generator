@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { userStore } from '$lib/stores/userStore.svelte';
-
+	import AppFooter from '$lib/components/AppFooter.svelte';
 	import AppHeader from '$lib/components/AppHeader.svelte';
 	import AppInput from '$lib/components/AppInput.svelte';
 	import AppOutput from '$lib/components/AppOutput.svelte';
 	import AppProgressIndicator from '$lib/components/AppProgressIndicator.svelte';
 	import AppProjectsSelector from '$lib/components/AppProjectsSelector.svelte';
+	import { userStore } from '$lib/stores/userStore.svelte';
 </script>
 
 <svelte:head>
@@ -20,30 +20,19 @@
 	<AppHeader />
 	<AppProgressIndicator />
 
-	<main class="section-brutalist">
-		<div class="container-brutalist">
-			<div class="grid-2">
+	<main>
+			<div class="grid grid-cols-1 md:grid-cols-2 p-8 gap-8">
 				<div class="flex flex-col gap-12">
 					<AppProjectsSelector />
 				</div>
-				<div>
+				<div class="flex flex-col flex-1">
 					<AppInput />
 					{#if userStore.input && userStore.output && userStore.selectedTopics.length > 0}
 						<AppOutput />
 					{/if}
 				</div>
 			</div>
-		</div>
 	</main>
 
-	<!-- Footer -->
-	<footer style="background-color: black; color: white;">
-		<div class="container-brutalist" style="padding: 32px 20px;">
-			<div class="text-center">
-				<p style="font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;">
-					BUILT WITH SVELTE 5 • MADE BY MACIEJ SPIECHOWICZ
-				</p>
-			</div>
-		</div>
-	</footer>
+  <AppFooter />
 </div>

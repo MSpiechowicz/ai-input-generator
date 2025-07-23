@@ -12,7 +12,7 @@
 		},
 		{
 			label: 'COPY RESULT',
-			active: userStore.generatedPrompt
+			active: userStore.promptCopied
 		}
 	]);
 </script>
@@ -31,7 +31,7 @@
 				<span class="text-lg font-bold">{step.label}</span>
 			</div>
 			{#if index < steps.length - 1}
-				<div class="w-1.5 h-15 md:h-1.5 md:w-15 bg-black"></div>
+				<div class="w-1.5 h-10 md:h-1.5 md:w-15 bg-black"></div>
 			{/if}
 		{/each}
 	</div>
