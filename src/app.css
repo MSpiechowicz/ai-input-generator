@@ -3,8 +3,6 @@
 
 @plugin '@tailwindcss/typography';
 
-@import './app-project-card.css';
-
 /* Neo-Brutalist Design System */
 :root {
 	--brutalism-black: #000000;
@@ -131,6 +129,7 @@ body {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0px var(--brutalism-black);
 }
+
 @media (prefers-reduced-motion: reduce) {
 	*,
 	*::before,
