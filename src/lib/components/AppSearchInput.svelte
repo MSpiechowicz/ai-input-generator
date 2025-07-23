@@ -3,6 +3,8 @@
 
 	function clearSelection() {
 		userStore.selectedTopics = [];
+		userStore.output = '';
+		userStore.input = '';
 	}
 
 	function clearSearch() {
@@ -25,7 +27,7 @@
 			<input
 				id="search-input"
 				type="text"
-				class="brutalism brutalism-shadow-medium w-full !pr-20 !pl-4 py-3 bg-white"
+				class="brutalism brutalism-shadow-medium w-full bg-white py-3 !pr-20 !pl-4"
 				placeholder="SEARCH TOPICS..."
 				bind:value={userStore.searchQuery}
 				aria-label="Search project types"
@@ -33,7 +35,7 @@
 			{#if userStore.searchQuery}
 				<button
 					type="button"
-					class="brutalism brutalism-shadow-medium brutalism-transition bg-button-red absolute top-2 right-4 h-6 w-6 font-bold  p-3"
+					class="brutalism brutalism-shadow-medium brutalism-transition bg-button-red absolute top-2 right-4 h-6 w-6 p-3 font-bold"
 					onclick={clearSearch}
 					aria-label="Clear search"
 				>

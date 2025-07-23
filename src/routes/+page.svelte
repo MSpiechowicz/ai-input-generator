@@ -1,16 +1,11 @@
 <script lang="ts">
+	import { userStore } from '$lib/stores/userStore.svelte';
+
 	import AppHeader from '$lib/components/AppHeader.svelte';
 	import AppInput from '$lib/components/AppInput.svelte';
 	import AppOutput from '$lib/components/AppOutput.svelte';
 	import AppProgressIndicator from '$lib/components/AppProgressIndicator.svelte';
 	import AppProjectsSelector from '$lib/components/AppProjectsSelector.svelte';
-
-
-
-
-
-
-
 </script>
 
 <svelte:head>
@@ -33,7 +28,9 @@
 				</div>
 				<div>
 					<AppInput />
-					<AppOutput />
+					{#if userStore.input && userStore.output && userStore.selectedTopics.length > 0}
+						<AppOutput />
+					{/if}
 				</div>
 			</div>
 		</div>
