@@ -17,18 +17,19 @@
 
 <footer class="bg-black text-white">
 	<div class="p-6">
-		<div class="flex flex-col md:flex-row items-center justify-center gap-2">
+		<div class="flex flex-col items-center justify-center gap-2 md:flex-row">
 			{#each footerContent as item, index (index)}
 				{#if item.link}
 					<a
 						href={item.link}
 						target="_blank"
-						class="cursor-pointer font-bold tracking-wider uppercase hover:underline hover:underline-offset-4"
+						rel="noopener noreferrer"
+						class="cursor-pointer font-bold tracking-wider uppercase hover:underline hover:underline-offset-4 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:outline-none"
 					>
 						{item.label}
 					</a>
 				{:else}
-					<p class="font-bold tracking-wider uppercase hidden md:block">{item.label}</p>
+					<p class="hidden font-bold tracking-wider uppercase md:block">{item.label}</p>
 				{/if}
 			{/each}
 		</div>

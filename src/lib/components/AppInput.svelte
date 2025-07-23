@@ -12,8 +12,10 @@
 		description="DESCRIBE WHAT YOU WANT TO BUILD OR ACCOMPLISH"
 	/>
 
+	<label for="project-request" class="sr-only">Enter your project request</label>
 	<textarea
-		class="brutalism brutalism-shadow-medium w-full bg-white p-4 font-bold {disabled
+		id="project-request"
+		class="brutalism brutalism-shadow-medium focus:ring-accent-tertiary w-full bg-white p-4 font-bold focus:ring-2 focus:ring-offset-2 focus:outline-none {disabled
 			? 'opacity-50'
 			: ''}"
 		placeholder={disabled
@@ -29,5 +31,9 @@
 			);
 		}}
 		aria-label="Enter your project request"
+		aria-describedby="request-instructions"
 	></textarea>
+	<div id="request-instructions" class="sr-only">
+		Describe what you want to build or accomplish. Select at least one project type first.
+	</div>
 </section>
