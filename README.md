@@ -9,7 +9,7 @@ A **brutalist-styled** Svelte 5 application that transforms basic user requests 
 
 ## 🚀 Features
 
-- **10 Project Types**: Svelte, React, Vue, Angular, Node.js, Python, UX Design, UI Design, Database, DevOps
+- **Multiple Project Types**: Svelte, React, Vue, Angular, Node.js, Python, UX Design, UI Design, Database, DevOps, Tailwind
 - **Professional Prompts**: Each project type has expertly crafted prompt templates
 - **Brutalist UX**: Bold, stark, and functional design aesthetic
 - **Copy to Clipboard**: One-click copying of generated prompts
@@ -54,14 +54,42 @@ npm run preview
 src/
 ├── lib/
 │   ├── components/
-│   │   ├── ProjectSelector.svelte    # Project type selection
-│   │   ├── InputArea.svelte         # User input textarea
-│   │   └── OutputArea.svelte        # Generated prompt display
-│   └── prompts.ts                   # Prompt templates and logic
+│   │   ├── AppFooter.svelte            # Footer component
+│   │   ├── AppHeader.svelte            # Header component
+│   │   ├── AppInput.svelte             # Main input component
+│   │   ├── AppNoProjectResult.svelte   # No project result component
+│   │   ├── AppOutput.svelte            # Output display component
+│   │   ├── AppProgressIndicator.svelte # Progress indicator component
+│   │   ├── AppProjects.svelte          # Projects list component
+│   │   ├── AppProjectsSelector.svelte  # Project selector component
+│   │   ├── AppSearchInput.svelte       # Search input component
+│   │   ├── AppSectionHeader.svelte     # Section header component
+│   │   └── AppShowMoreProjects.svelte  # Show more projects component
+│   ├── prompts/
+│   │   ├── angular/                    # Angular prompt templates
+│   │   ├── database/                   # Database prompt templates
+│   │   ├── devops/                     # DevOps prompt templates
+│   │   ├── nodejs/                     # Node.js prompt templates
+│   │   ├── python/                     # Python prompt templates
+│   │   ├── react/                      # React prompt templates
+│   │   ├── svelte/                     # Svelte prompt templates
+│   │   ├── tailwind/                   # Tailwind prompt templates
+│   │   ├── ui/                         # UI design prompt templates
+│   │   ├── ux/                         # UX design prompt templates
+│   │   └── vue/                        # Vue prompt templates
+│   ├── stores/
+│   │   └── userStore.svelte.ts         # User state management
+│   ├── types/
+│   │   └── topicType.ts                # TypeScript type definitions
+│   ├── index.ts                        # Library exports
+│   └── prompts.svelte.ts               # Prompt templates and logic
 ├── routes/
-│   └── +page.svelte                 # Main application page
-├── app.css                          # Global brutalist styles
-└── app.html                         # HTML template
+│   ├── +layout.svelte                  # Root layout component
+│   ├── +layout.ts                      # Root layout logic
+│   └── +page.svelte                    # Main application page
+├── app.css                             # Global brutalist styles
+├── app.d.ts                            # App type declarations
+└── app.html                            # HTML template
 ```
 
 ## 🎨 Design Philosophy
@@ -69,8 +97,7 @@ src/
 This app embraces **brutalist design** principles:
 
 - **Raw functionality over decoration**
-- **Bold typography and stark contrasts** 
-- **Monospace fonts** (JetBrains Mono)
+- **Bold typography and stark contrasts**
 - **Sharp borders and geometric shapes**
 - **Black and white color scheme**
 - **Direct, unambiguous UI elements**
@@ -79,22 +106,19 @@ This app embraces **brutalist design** principles:
 
 ### Adding New Project Types
 
-1. Add new project type to `src/lib/prompts.ts`:
+1. Add new project type to `src/lib/prompts` (create a new folder with the project type name) and add the following to the `config.json` file:
 
 ```typescript
 {
   id: 'newtype',
   name: 'New Type',
   description: 'Description here',
-  emoji: '🔥'
+  keywords: ['keyword1', 'keyword2', 'keyword3'],
+  promptFiles: ['prompt1.md', 'prompt2.md']
 }
 ```
 
-2. Add corresponding prompt template:
-
-```typescript
-newtype: `Your expert prompt template here...`
-```
+2. Add prompt template to the `md` files in the new project type folder.
 
 ### Modifying Styles
 
@@ -130,4 +154,4 @@ The brutalist design system is defined in `src/app.css` with CSS custom properti
 
 ---
 
-**Built with ❤️ and aggressive typography**
+**Built with ❤️ and aggressive typography - Check out the [Live Demo](https://mspiechowicz.github.io/ai-input-generator/)**
