@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "BASE_PATH='/ai-input-generator' vite build",
+		"build": "vite build",
 		"deploy": "gh-pages -d build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",

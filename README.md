@@ -46,7 +46,31 @@ npm run build
 
 # Preview production build
 npm run preview
+
+## 🚀 Deployment
+
+This project is configured to deploy to GitHub Pages automatically via GitHub Actions.
+
+### Manual Deployment
+
+If you need to deploy manually:
+
+```bash
+# Build the project
+npm run build
+
+# Deploy to GitHub Pages (requires gh-pages package)
+npm run deploy
 ```
+
+### GitHub Pages Configuration
+
+1. Go to your repository settings
+2. Navigate to "Pages" section
+3. Set "Source" to "GitHub Actions"
+4. Ensure the workflow is enabled
+
+The site will be available at: `https://[username].github.io/[repository-name]/`
 
 ## 📦 Project Structure
 
